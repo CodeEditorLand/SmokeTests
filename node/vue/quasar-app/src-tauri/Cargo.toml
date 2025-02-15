@@ -1,27 +1,27 @@
 workspace = {}
 
-[package]
+[[bin]]
 name = "app"
-version = "0.1.0"
-description = "A Tauri App"
-author = ["Daniel Thompson-Yvetot"]
-license-file = "LICENSE"
-repository = ""
-default-run = "app"
-edition = "2018"
-
-[dependencies]
-serde_json = { version = "1.0" }
-serde = { version = "1.0", features = ["derive"] }
-tauri = { path = "../../../../../core/tauri", features = ["api-all"] }
+path = "src/main.rs"
 
 [build-dependencies]
 tauri-build = { path = "../../../../../core/tauri-build" }
 
-[features]
-default = ["custom-protocol"]
-custom-protocol = ["tauri/custom-protocol"]
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = { version = "1.0" }
+tauri = { path = "../../../../../core/tauri", features = ["api-all"] }
 
-[[bin]]
+[features]
+custom-protocol = ["tauri/custom-protocol"]
+default = ["custom-protocol"]
+
+[package]
+author = ["Daniel Thompson-Yvetot"]
+default-run = "app"
+description = "A Tauri App"
+edition = "2018"
+license-file = "LICENSE"
 name = "app"
-path = "src/main.rs"
+repository = ""
+version = "0.1.0"
