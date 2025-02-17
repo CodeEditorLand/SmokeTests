@@ -23,10 +23,10 @@
 		"gatsby-plugin-mdx": "5.14.0",
 		"gatsby-plugin-netlify": "5.1.1",
 		"gatsby-plugin-sharp": "5.14.0",
-		"gatsby-plugin-theme-ui": "0.17.1",
+		"gatsby-plugin-theme-ui": "0.17.2",
 		"gatsby-source-filesystem": "5.14.0",
 		"gatsby-transformer-sharp": "5.14.0",
-		"theme-ui": "0.17.1"
+		"theme-ui": "0.17.2"
 	},
 	"devDependencies": {}
 }
