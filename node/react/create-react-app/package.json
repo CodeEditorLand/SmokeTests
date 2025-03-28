@@ -1,7 +1,30 @@
 {
 	"name": "create-react-app",
+	"version": "0.0.1",
+	"private": false,
+	"keywords": [
+		"codeeditorland",
+		"land",
+		"playform"
+	],
+	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/SmokeTests#readme",
+	"bugs": {
+		"url": "HTTPS://GitHub.Com/CodeEditorLand/SmokeTests/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+HTTPS://github.com/CodeEditorLand/SmokeTests.git"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "Source 🖋️ Open 👐🏻",
+		"email": "Source/Open@Editor.Land",
+		"url": "HTTPS://Editor.Land"
+	},
+	"type": "module",
 	"scripts": {
 		"build": "craco build",
+		"prepublishOnly": "Build 'Source/**/*.ts'",
 		"start": "craco start",
 		"tauri:build": "yarn tauri:source build",
 		"tauri:dev": "yarn tauri:source dev",
@@ -21,6 +44,10 @@
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"@craco/craco": "7.1.0"
+		"@craco/craco": "7.1.0",
+		"@playform/build": "0.2.1"
+	},
+	"publishConfig": {
+		"access": "public"
 	}
 }
