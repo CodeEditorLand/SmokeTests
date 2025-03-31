@@ -19,9 +19,7 @@ fn main() {
 				tauri::async_runtime::spawn(async move {
 					while let Some(event) = rx.recv().await {
 						if let tauri::api::process::CommandEvent::Stdout(line) = event {
-							window
-								.emit("node", Some(format!("'{}'", line)))
-								.expect("failed to emit event");
+							window.emit("node", Some(format!("'{}'", line))).expect("failed to emit event");
 						}
 					}
 				});
@@ -31,14 +29,11 @@ fn main() {
 			window_.listen("hello", move |msg| {
 				#[derive(Serialize)]
 				pub struct Reply {
-					pub msg:String,
-					pub rep:String,
+					pub msg: String,
+					pub rep: String,
 				}
 
-				let reply = Reply {
-					msg:format!("{:?}", msg).to_string(),
-					rep:"something else".to_string(),
-				};
+				let reply = Reply { msg: format!("{:?}", msg).to_string(), rep: "something else".to_string() };
 
 				window__
 					.emit("reply", Some(serde_json::to_string(&reply).unwrap()))
