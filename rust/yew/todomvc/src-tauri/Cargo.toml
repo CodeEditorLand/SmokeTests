@@ -1,6 +1,6 @@
 [[bin]]
 name = "app"
-path = "src/main.rs"
+path = "Source/main.rs"
 
 [build-dependencies]
 tauri-build = "2.0.0"
