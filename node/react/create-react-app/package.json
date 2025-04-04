@@ -45,7 +45,7 @@
 	"dependencies": {},
 	"devDependencies": {
 		"@craco/craco": "7.1.0",
-		"@playform/build": "0.2.1"
+		"@playform/build": "0.2.2"
 	},
 	"publishConfig": {
 		"access": "public"
