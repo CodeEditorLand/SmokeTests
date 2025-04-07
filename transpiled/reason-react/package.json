@@ -35,7 +35,7 @@
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"@playform/build": "0.2.2",
+		"@playform/build": "0.2.3",
 		"bs-platform": "9.0.2",
 		"moduleserve": "0.9.1",
 		"tauri": "0.15.0"
